@@ -23,3 +23,7 @@ Load the updated configuration into your current shell session:
 ```bash
 source ~/.bashrc
 ```
+
+## Acknowledgements
+
+Git prompt functionality is based on [git-prompt.sh](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh).
