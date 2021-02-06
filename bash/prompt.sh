@@ -1,4 +1,5 @@
 NO_COLOUR="\[\e[0m\]"
+FG_BLUE="\[\e[34m\]"
 FG_GREEN="\[\e[32m\]"
 FG_LIGHT_CYAN="\[\e[96;1m\]"
 FG_LIGHT_GREEN="\[\e[92;1m\]"
@@ -13,8 +14,14 @@ __set_ps1() {
         PROMPT_COLOUR="$FG_LIGHT_RED"
     fi
 
-    export PS1_PRE_GIT="\[\033]2;\u@\h : \w\007\]$FG_LIGHT_CYAN$(date +'%F %T') $FG_LIGHT_MAGENTA\u@\h $FG_LIGHT_YELLOW\w"
-    export PS1_POST_GIT="\n$PROMPT_COLOUR\! \$ $NO_COLOUR"
+    if [ -z "$VIRTUAL_ENV" ]; then
+        PS1_VENV=""
+    else
+        PS1_VENV=" ($VIRTUAL_ENV)"
+    fi
+
+    export PS1_PRE_GIT="\[\033]2;\u@\h : \w$PS1_VENV\007\]$FG_LIGHT_CYAN$(date +'%F %T') $FG_LIGHT_MAGENTA\u@\h $FG_LIGHT_YELLOW\w"
+    export PS1_POST_GIT="$NO_COLOUR$FG_BLUE$PS1_VENV\n$PROMPT_COLOUR\! \$ $NO_COLOUR"
     export PS1="$PS1_PRE_GIT$PS1_POST_GIT"
 }
 
@@ -30,3 +37,5 @@ if [ -f ~/src/jasontgreen/dot-files/git/prompt.sh ]; then
 else
     export PROMPT_COMMAND='__set_ps1'
 fi
+
+export VIRTUAL_ENV_DISABLE_PROMPT=1
