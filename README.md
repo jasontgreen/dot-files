@@ -17,3 +17,9 @@ Back up your existing **~/.bashrc** file and replace it with a link to the **.ba
 mv ~/.bashrc ~/.bashrc.old
 ln -s ~/src/jasontgreen/dot-files/linuxmint/20.1/.bashrc ~/.bashrc
 ```
+
+Load the updated configuration into your current shell session:
+
+```bash
+source ~/.bashrc
+```
