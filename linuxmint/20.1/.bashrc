@@ -120,3 +120,8 @@ fi
 if [ -f ~/src/jasontgreen/dot-files/bash/prompt.sh ]; then
     . ~/src/jasontgreen/dot-files/bash/prompt.sh
 fi
+
+# configure bash history
+if [ -f ~/src/jasontgreen/dot-files/bash/history.sh ]; then
+    . ~/src/jasontgreen/dot-files/bash/history.sh
+fi
