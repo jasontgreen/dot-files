@@ -25,7 +25,7 @@ __set_ps1() {
     export PS1="$PS1_PRE_GIT$PS1_POST_GIT"
 }
 
-if [ -f ~/src/dot-files/git/prompt.sh ]; then
+if [ -f ~/src/jasontgreen/dot-files/git/prompt.sh ]; then
     export GIT_PS1_SHOWCOLORHINTS=true
     export GIT_PS1_SHOWDIRTYSTATE=true
     export GIT_PS1_SHOWSTASHSTATE=true

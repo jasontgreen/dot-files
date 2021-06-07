@@ -117,13 +117,13 @@ if ! shopt -oq posix; then
 fi
 
 # customise bash prompt
-if [ -f ~/src/dot-files/bash/prompt.sh ]; then
-    . ~/src/dot-files/bash/prompt.sh
+if [ -f ~/src/jasontgreen/dot-files/bash/prompt.sh ]; then
+    . ~/src/jasontgreen/dot-files/bash/prompt.sh
 fi
 
 # configure bash history
-if [ -f ~/src/dot-files/bash/history.sh ]; then
-    . ~/src/dot-files/bash/history.sh
+if [ -f ~/src/jasontgreen/dot-files/bash/history.sh ]; then
+    . ~/src/jasontgreen/dot-files/bash/history.sh
 fi
 
 # tabtab source for packages
