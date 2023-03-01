@@ -117,11 +117,11 @@ if ! shopt -oq posix; then
 fi
 
 # customise bash prompt
-if [ -f ~/src/jasontgreen/dot-files/bash/prompt.sh ]; then
-    . ~/src/jasontgreen/dot-files/bash/prompt.sh
+if [ -f ~/src/github.com/jasontgreen/dot-files/bash/prompt.sh ]; then
+    . ~/src/github.com/jasontgreen/dot-files/bash/prompt.sh
 fi
 
 # configure bash history
-if [ -f ~/src/jasontgreen/dot-files/bash/history.sh ]; then
-    . ~/src/jasontgreen/dot-files/bash/history.sh
+if [ -f ~/src/github.com/jasontgreen/dot-files/bash/history.sh ]; then
+    . ~/src/github.com/jasontgreen/dot-files/bash/history.sh
 fi
