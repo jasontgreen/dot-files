@@ -4,10 +4,10 @@ Custom Configuration Files for UNIX-like Environments
 
 ## Installation
 
-Clone the GitHub repository to the **~/src/jasontgreen/dot-files** directory:
+Clone the GitHub repository to the **~/src/github.com/jasontgreen/dot-files** directory:
 
 ```bash
-mkdir -p ~/src/jasontgreen && cd ~/src/jasontgreen
+mkdir -p ~/src/github.com/jasontgreen && cd ~/src/github.com/jasontgreen
 git clone git@github.com:jasontgreen/dot-files.git
 ```
 
@@ -15,7 +15,7 @@ Back up your existing **~/.bashrc** file and replace it with a link to the **.ba
 
 ```bash
 mv ~/.bashrc ~/.bashrc.old
-ln -s ~/src/jasontgreen/dot-files/linuxmint/20.3/.bashrc ~/.bashrc
+ln -s ~/src/github.com/jasontgreen/dot-files/linuxmint/20.3/.bashrc ~/.bashrc
 ```
 
 Load the updated configuration into your current shell session:
